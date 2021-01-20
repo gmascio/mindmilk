@@ -1,9 +1,9 @@
-# mindmilk
+# MindMilk
 
 
 ## Project Description
 
-MindMilk is an AIrtable and React built app that mimics a social media platform. Users are able to post mental health updates(inclusive of strugles, milestones, methods of mental health relief ,etc..) The home page is poppulated with mental health posts made by users and comments from other users. The user is abe to navigate to prior posts and comments made by other users as an archive. The users are also able to navigate to a page poppulated with mental health information perhaps poppulated by a mental health API.
+MindMilk is an Airtable and React built app that mimics a social media platform. Users are able to post mental health updates(inclusive of strugles, milestones, methods of mental health relief ,etc..) The home page is poppulated with mental health posts made by users and comments from other users. The user is abe to navigate to prior posts and comments made by other users as an archive. The users are also able to navigate to a page poppulated with mental health information perhaps poppulated by a mental health API.
 
 ## Wireframes
 
