@@ -13,7 +13,7 @@ The wireframes below represent the overall structure of the home page containing
 
 ## Component Heirarchy
 
-![imageAlt](<https://i.ibb.co/jZVh2hj/Screen-Shot-2021-01-20-at-9-49-18-AM.png)
+![imageAlt](https://i.ibb.co/jZVh2hj/Screen-Shot-2021-01-20-at-9-49-18-AM.png)
 
 
 ## API and Data Sample
