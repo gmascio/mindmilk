@@ -9,15 +9,16 @@ MindMilk is an Airtable and React built app that mimics a social media platform.
 
 The wireframes below represent the overall structure of the home page containing the feed of mental health posts. A navigation bar will contain archives to posts and a page displaying pertinent mental health information. 
 
-![imageAlt](<https://i.ibb.co/1ZWM4sg/Screen-Shot-2021-01-20-at-12-26-34-PM.png)
+![imageAlt](https://i.ibb.co/1ZWM4sg/Screen-Shot-2021-01-20-at-12-26-34-PM.png)
+![imageAlt](https://i.ibb.co/ZxH4SYW/Screen-Shot-2021-01-20-at-12-43-16-PM.png)
+![imageAlt](https://i.ibb.co/s6J6sys/Screen-Shot-2021-01-20-at-12-52-17-PM.png)
 
 ## Component Heirarchy
 
 ![imageAlt](https://i.ibb.co/jypk7ZC/Screen-Shot-2021-01-20-at-12-23-58-PM.png)
-![imageAlt](https://i.ibb.co/ZxH4SYW/Screen-Shot-2021-01-20-at-12-43-16-PM.png)
-![imageAlt](https://i.ibb.co/s6J6sys/Screen-Shot-2021-01-20-at-12-52-17-PM.png)
 
 
+## Airtable Data
 https://airtable.com/appSKWNbZ0ZkxF5l7
 
 Airtable is returning the data for this base as follows:
