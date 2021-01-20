@@ -3,22 +3,22 @@
 
 ## Project Description
 
-MindMilk is an Airtable and React built app that mimics a social media platform. Users are able to post mental health updates(inclusive of struggles, milestones, methods of mental health relief ,etc..) The home page is poppulated with mental health posts made by users and comments from other users. The user is abe to navigate to prior posts and comments made by other users as an archive. The users are also able to navigate to a page poppulated with mental health information, perhaps sourced from a mental health API.
+MindMilk is an Airtable and React built app that mimics a social media platform. Users are able to post mental health updates(inclusive of struggles, milestones, methods of mental health relief ,etc..) by clicking on the "Posts Form" in the navigation tab. The home page is poppulated with mental health posts made by users. A "Read More" button will redirect the user into a comments page where they can view comments and make additional comments. The user are able to return to the home page by simply clicking the title : "MindMilk". The users are also able to navigate to a page poppulated with mental health information, perhaps sourced from a mental health API.
 
 ## Wireframes
 
 The wireframes below represent the overall structure of the home page containing the feed of mental health posts. A navigation bar will contain archives to posts and a page displaying pertinent mental health information. 
 
-![imageAlt](https://i.ibb.co/BPJhdYT/Screen-Shot-2021-01-20-at-9-52-26-AM.png)
+![imageAlt](<https://i.ibb.co/1ZWM4sg/Screen-Shot-2021-01-20-at-12-26-34-PM.png)
 
 ## Component Heirarchy
 
-![imageAlt](https://i.ibb.co/jZVh2hj/Screen-Shot-2021-01-20-at-9-49-18-AM.png)
+![imageAlt](https://i.ibb.co/jypk7ZC/Screen-Shot-2021-01-20-at-12-23-58-PM.png)
+![imageAlt](https://i.ibb.co/ZxH4SYW/Screen-Shot-2021-01-20-at-12-43-16-PM.png)
+![imageAlt](https://i.ibb.co/s6J6sys/Screen-Shot-2021-01-20-at-12-52-17-PM.png)
 
 
-## API and Data Sample
-
-https://airtable.com/tblyG48aQCz49KeaE/viwCani2sR6Rju9Uv?blocks=hide
+https://airtable.com/appSKWNbZ0ZkxF5l7
 
 Airtable is returning the data for this base as follows:
 
@@ -29,30 +29,9 @@ Airtable is returning the data for this base as follows:
         {
             "id": "recvauS5STwMJzy0o",
             "fields": {
-                "Date Posted": "2011-10-27",
-                "Image": [
-                    {
-                        "id": "atthY3hSOvwuDrxMM",
-                        "url": "https://dl.airtable.com/JYC46O1wRONhtNR1xfhU_Max.jpg",
-                        "filename": "Max.jpg",
-                        "size": 243283,
-                        "type": "image/jpeg",
-                        "thumbnails": {
-                            "small": {
-                                "url": "https://dl.airtable.com/HCFdmbS0TlyOa2zAN5HO_Max.jpg",
-                                "width": 54,
-                                "height": 36
-                            },
-                            "large": {
-                                "url": "https://dl.airtable.com/UvapU3RjRIKOAwLQt8ij_Max.jpg",
-                                "width": 256,
-                                "height": 170
-                            }
-                        }
-                    }
-                ],
-                "Name": "Ghelila",
-                "Posts": "Does anyone have recommendations for drinks that alleviate anxiety?"
+                "name": "Ghelila",
+                "image": "Max.jpg (https://dl.airtable.com/JYC46O1wRONhtNR1xfhU_Max.jpg)",
+                "posts": "Does anyone have recommendations for drinks that alleviate anxiety?"
             },
             "createdTime": "2015-09-25T23:27:41.000Z"
         },
@@ -77,14 +56,14 @@ Airtable is returning the data for this base as follows:
 #### MVP
 
 - Home page with clickable icons that route to each respective feed.
-- Get and post mental health posts and comment.
+- Get and post mental health posts.
 - Use an airtable to track posts and display them in archive page
 - Style responsively
 
 #### PostMVP
 
 - Incorporate an API call to poppulate the MentalHealth Feed Page with mental health information.
-- Add a sign in page to certify each user.
+- Incorporate comments to each post.
 - Add an icon for each user.
 
 ## Project Schedule
