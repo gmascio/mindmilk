@@ -19,6 +19,7 @@ https://wireframe.cc/
 ![imageAlt](https://i.ibb.co/s6J6sys/Screen-Shot-2021-01-20-at-12-52-17-PM.png)
 
 Mobile:
+
 ![imageAlt](https://i.ibb.co/gMLzPj6/Screen-Shot-2021-01-20-at-2-08-33-PM.png)
 ![imageAlt](https://i.ibb.co/XVYhFx4/Screen-Shot-2021-01-20-at-2-08-55-PM.png) 
 ## Component Heirarchy
