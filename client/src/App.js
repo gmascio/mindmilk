@@ -3,6 +3,7 @@ import axios from "axios";
 import { baseURL, config } from "./services";
 import { useEffect, useState } from "react";
 import Nav from "./components/Nav"
+import Home from "./components/Home"
 
 function App() {
   {/* save posts in state */}
@@ -18,7 +19,8 @@ function App() {
   }, []);
     return (
       <div className="App">
-        <Nav/>
+        <Nav />
+        <Home posts={posts}/>
     </div>
   );
 }

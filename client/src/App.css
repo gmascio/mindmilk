@@ -1,6 +1,5 @@
-
-body{
-  background-color: #D3BCC0;
+body {
+  background-color: #d3bcc0;
 }
 ul {
   list-style: none;
@@ -10,49 +9,69 @@ ul {
   float: right;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px; 
-  padding-top: 40px;
-  
+  font-size: 17px;
+  padding-top: 42px;
 }
 li {
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: "Indie Flower", cursive;
   color: black;
   display: inline;
-  
-
+  font-size: 17px;
 }
 
 #feed {
   padding-left: 15px;
 }
 
-
 nav {
-  background-color: #C58882;
+  background-color: #c58882;
   width: 100vw;
   text-align: center;
 }
-nav a{
+nav a {
   text-decoration: none;
 }
 
-nav a:hover , nav ul li:hover  {
-  border-bottom: 4px solid #D3BCC0;
+nav a:hover,
+nav ul li:hover {
+  border-bottom: 4px solid #d3bcc0;
 }
 nav h1 {
   text-align: center;
   font-size: 60px;
   display: inline;
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   color: rgb(15, 14, 14);
-  
 }
 
 nav h2 {
   font-size: 25px;
   display: inline;
   padding-left: 10px;
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
+}
+
+.icons {
+  max-width: 45px;
+  max-height: 45px;
+}
+.post {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  max-width: 700px;
+  outline: black;
+}
+.post h1 {
+  font-family: "Indie Flower", cursive;
+}
+.post h1 , .post img , .post p {
+  text-align: center;
   
+}
+main {
+  justify-content: center;
+  align-items: center;
 }
