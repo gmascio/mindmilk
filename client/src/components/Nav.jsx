@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
+
 function Nav() {
   return (
     <div>
       <nav>
       <ul>
-          <Link to="">
+          <Link to="/new">
             <li id="post">Post Form</li>
           </Link>
           <Link to= "">

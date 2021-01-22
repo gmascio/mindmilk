@@ -75,3 +75,10 @@ main {
   justify-content: center;
   align-items: center;
 }
+.post button {
+background-color: #c58882 ;
+
+}
+.post button:hover {
+background-color: #74546A;
+}
