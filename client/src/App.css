@@ -51,6 +51,13 @@ nav h2 {
   padding-left: 10px;
   font-family: "Indie Flower", cursive;
 }
+nav img {
+  width: 90px;
+  border-radius: 50%;
+  padding-right: 13px;
+  opacity: .8;
+  
+}
 
 .icons {
   max-width: 45px;
@@ -68,7 +75,7 @@ nav h2 {
   padding: 20px;
   margin: 20px;
   transform: translate(15%, 0);
-  max-width: 700px;
+  max-width: 800px;
 }
 .post h1 {
   font-family: "Indie Flower", cursive;
@@ -78,13 +85,18 @@ nav h2 {
   padding: 5px;
   
 }
+.post img {
+  border-radius: 80%;
+}
 main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 .post button {
-background-color: #74546A  ;
+background-color: #74546A;
+border-radius: 1cm;
+padding: 15px;
 
 
 }
@@ -101,6 +113,8 @@ background-color: #d3bcc0 ;
   margin-top: 40px;
   padding: 30px;
   max-width: 600px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   
 }
 .postform input {
@@ -130,5 +144,24 @@ form button {
   width: 100px;
   transform: translate(120%, 0);
   background-color: #74546A;
+  border-radius: 1cm;
   
 }
+
+footer {
+  background-color: #c58882;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin-top: 50px;
+
+}
+ footer img {
+   width: 30px;
+   height: 30px;
+   padding-left: 5px;
+   padding-right: 5px;
+ }
+
+ 

@@ -6,6 +6,7 @@ import Nav from "./components/Nav"
 import Home from "./components/Home"
 import Postsform from './components/Postsform';
 import { Link, Route, Switch } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   {/* save posts in state */}
@@ -27,10 +28,11 @@ function App() {
         <Route exact path= "/">
           <Home posts={posts} />
           </Route>
-        <Route path = "/new">
+        <Route path = "/newpost">
         <Postsform setToggleFetch={setToggleFetch} />
-        </Route>
+          </Route>
         </Switch>
+          <Footer />
     </div>
   );
 }

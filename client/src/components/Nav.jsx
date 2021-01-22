@@ -5,8 +5,8 @@ function Nav() {
   return (
     <div>
       <nav>
-      <ul>
-          <Link to="/new">
+        <ul>
+          <Link to="/newpost">
             <li id="post">Post Form</li>
           </Link>
           <Link to= "">
@@ -14,6 +14,7 @@ function Nav() {
           </Link>
           
       </ul>
+          <img src= "https://ychef.files.bbci.co.uk/976x549/p08vpmjp.webp"/>
         <Link to="/">
           <h1>MindMilk</h1> 
         </Link>
