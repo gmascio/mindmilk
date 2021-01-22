@@ -10,7 +10,7 @@ function Home(props) {
               <h1>{post.fields.name} </h1>
               <img className= "icons" src= {post.fields.image}/>
               <p>{post.fields.posts} </p>
-              <button>Read More</button>
+              <button>Comments</button>
             </div>
           )
         })}

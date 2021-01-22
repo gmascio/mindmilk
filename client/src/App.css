@@ -53,7 +53,7 @@ nav h2 {
 }
 nav img {
   width: 90px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   padding-right: 13px;
   opacity: .8;
   
@@ -79,14 +79,17 @@ nav img {
 }
 .post h1 {
   font-family: "Indie Flower", cursive;
+  border: 2px dotted #74546A;
+  border-radius: 90%;
 }
 .post h1 , .post img , .post p {
   text-align: center;
   padding: 5px;
   
+  
 }
 .post img {
-  border-radius: 80%;
+  border-radius: 120%;
 }
 main {
   justify-content: center;
@@ -131,6 +134,8 @@ main h2 {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
+  text-decoration: underline;
+  opacity: .7;
 }
 
 .postform h4 {
