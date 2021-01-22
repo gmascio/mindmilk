@@ -21,7 +21,7 @@ function Postsform(props) {
   };
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form className="postform" onSubmit={handleSubmit}>
       <h4>Make a New MindMilk Post!</h4>
       <label htmlFor="name">Name:</label>
       <input
@@ -33,7 +33,7 @@ function Postsform(props) {
       />
       <label htmlFor="image">Image:</label>
       <input
-        name="image"
+          name="image"
           type="text"
           placeholder= "URL"
         value={image}
@@ -42,12 +42,12 @@ function Postsform(props) {
       <label htmlFor="post">Post:</label>
       <input
         name="post"
-          type="text"
+          type="textarea"
           placeholder= "Post"
         value={post}
         onChange={(e) => setPost(e.target.value)}
       />
-      <button type="submit">Get Some MindMilk</button>
+      <button type="submit">Get Some MindMilk!</button>
     </form>
     </div>
   )

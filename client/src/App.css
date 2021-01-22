@@ -61,24 +61,74 @@ nav h2 {
   flex-direction: row;
   justify-content:center;
   align-items: center;
+  width: 70vw;
+
+  background-color: #c58882;
+  border-radius: 20cm;
+  padding: 20px;
+  margin: 20px;
+  transform: translate(15%, 0);
   max-width: 700px;
-  outline: black;
 }
 .post h1 {
   font-family: "Indie Flower", cursive;
 }
 .post h1 , .post img , .post p {
   text-align: center;
+  padding: 5px;
   
 }
 main {
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .post button {
-background-color: #c58882 ;
+background-color: #74546A  ;
+
 
 }
 .post button:hover {
-background-color: #74546A;
+background-color: #d3bcc0 ;
+}
+.postform {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  transform: translate(25%, 0);
+  background-color: #c58882;
+  border-radius: 2cm;
+  margin-top: 40px;
+  padding: 30px;
+  max-width: 600px;
+  
+}
+.postform input {
+  text-align: center;
+  padding: 7px;
+  border-radius: 1cm;
+}
+.postform label {
+  padding: 5px;
+}
+
+
+main h2 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+
+.postform h4 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  
+}
+
+form button {
+  margin: 20px;
+  width: 100px;
+  transform: translate(120%, 0);
+  background-color: #74546A;
+  
 }

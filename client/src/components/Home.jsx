@@ -3,6 +3,7 @@ function Home(props) {
   return (
     <div>
       <main>
+        <h2>MindMilk Posts</h2>
         {props.posts.map((post) => {
           return (
             <div class= "post">
