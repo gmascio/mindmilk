@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Nav from "./components/Nav"
 import Home from "./components/Home"
 import Postsform from './components/Postsform';
-import { Link, Route } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 
 function App() {
   {/* save posts in state */}
@@ -23,12 +23,14 @@ function App() {
     return (
       <div className="App">
         <Nav />
-        <Route path= "/">
+        <Switch>
+        <Route exact path= "/">
           <Home posts={posts} />
           </Route>
         <Route path = "/new">
         <Postsform setToggleFetch={setToggleFetch} />
         </Route>
+        </Switch>
     </div>
   );
 }

@@ -1,19 +1,23 @@
 import { useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
+import { useHistory} from "react-router-dom"
 function Postsform(props) {
-  const [name, setName] = useState("Anonymous");
-  const [image, setImage] = useState("URL");
-  const [post, setPost] = useState("What's on your mind?");
+  const [name, setName] = useState("");
+  const [image, setImage] = useState("");
+  const [post, setPost] = useState("");
+  const history = useHistory()
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
-      name,
-      image,
-      post,
+      name:name,
+      image:image,
+      posts:post,
     };
     await axios.post(baseURL, { fields }, config);
     props.setToggleFetch((prev) => !prev);
+    history.push("/")
+    
   };
   return (
     <div>
@@ -22,21 +26,24 @@ function Postsform(props) {
       <label htmlFor="name">Name:</label>
       <input
         name="name"
-        type="text"
+          type="text"
+          placeholder= "Anonymous"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <label htmlFor="image">Image:</label>
       <input
         name="image"
-        type="text"
+          type="text"
+          placeholder= "URL"
         value={image}
         onChange={(e) => setImage(e.target.value)}
       />
       <label htmlFor="post">Post:</label>
       <input
         name="post"
-        type="text"
+          type="text"
+          placeholder= "Post"
         value={post}
         onChange={(e) => setPost(e.target.value)}
       />
