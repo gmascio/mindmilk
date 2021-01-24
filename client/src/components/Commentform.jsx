@@ -1,40 +1,36 @@
-import { useState } from "react";
+import React from 'react'
 import axios from "axios";
 import { baseURL, config } from "../services";
+import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom"
-import useSound from "use-sound";
 import Pour from "../audio/pouring.mp3"
 
-
-
-function Postsform(props) {
+function Commentform(props) {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
-  const [post, setPost] = useState("");
-  const history = useHistory()
-  
+  const [comment, setComment] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const fields = {
+      name,
+      image,
+      comment,
+    };
+    await axios.post(baseURL, { fields }, config);
+    props.setToggleFetch((prev) => !prev);
+    
+    
+  };
   let audio = new Audio(Pour)
   const start = () => {
     audio.play()
   }
-  
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const fields = {
-      name:name,
-      image:image,
-      posts:post,
-    };
-    await axios.post(baseURL, { fields }, config);
-    props.setToggleFetch((prev) => !prev);
-    history.push("/")
-    
-  };
+
   return (
-    
     <div>
-      <form className="postform" onSubmit={handleSubmit}>
-      <h4>Make a New MindMilk Post!</h4>
+       <form className="postform" onSubmit={handleSubmit}>
+      <h4>Post a MindMilk Comment!</h4>
       <label htmlFor="name">Name:</label>
       <input
         name="name"
@@ -55,14 +51,15 @@ function Postsform(props) {
       <input
         name="post"
           type="textarea"
-          placeholder= "Post"
-        value={post}
-        onChange={(e) => setPost(e.target.value)}
+          placeholder= "Comment"
+        value={comment}
+        onChange={(e) => setComment(e.target.value)}
       />
       
-        <button type="submit" onClick={start} >Get Some MindMilk!</button>
+        <button type="submit" onClick={start} >Post Some MindMilk!</button>
     </form>
     </div>
   )
 }
-export default Postsform;
+
+export default Commentform

@@ -8,6 +8,7 @@ import Postsform from './components/Postsform';
 import { Link, Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer";
 import Comments from "./components/Comments";
+import Resources from "./components/Resources"
 
 function App() {
   {/* save posts in state */}
@@ -34,6 +35,9 @@ function App() {
         </Route>
           <Route path = "/posts/:id">
             <Comments posts={posts} />
+          </Route>
+          <Route>
+            <Resources path = "/resources"/>
           </Route>
       </Switch>
           <Footer />

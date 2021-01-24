@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { commentURL, config } from "../services";
 import axios from "axios";
 import CommentList from "../components/CommentList"
+import Commentform from "../components/Commentform.jsx"
 
 function Comments(props) {
   // const [name, setName] = useState("");
@@ -49,7 +50,7 @@ function Comments(props) {
         <img className="icons" src={specificPost[0].fields.image} />
         <p>{specificPost[0].fields.posts}</p>
 
-        <form></form>
+        
         
       </div>
       <div>
@@ -57,6 +58,8 @@ function Comments(props) {
           <CommentList comments={comments} id={params.id} />
         
         }
+        <Commentform/>
+
         </div>
     </main>
   );

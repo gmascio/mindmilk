@@ -9,7 +9,7 @@ function Nav() {
           <Link to="/newpost">
             <li id="post">Post Form</li>
           </Link>
-          <Link to= "">
+          <Link to= "/resources">
             <li id="feed"> Mental Health Resources</li>
           </Link>
           
