@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from "axios";
-import { baseURL, config } from "../services";
+import { commentURL, config } from "../services";
 import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom"
 import Pour from "../audio/pouring.mp3"
@@ -13,11 +13,11 @@ function Commentform(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
-      name,
-      image,
       comment,
+      name,
+      // image,
     };
-    await axios.post(baseURL, { fields }, config);
+    await axios.post(commentURL, { fields }, config);
     props.setToggleFetch((prev) => !prev);
     
     
@@ -47,7 +47,7 @@ function Commentform(props) {
         value={image}
         onChange={(e) => setImage(e.target.value)}
       />
-      <label htmlFor="post">Post:</label>
+      <label htmlFor="post">Comment:</label>
       <input
         name="post"
           type="textarea"

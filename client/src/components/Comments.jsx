@@ -6,20 +6,7 @@ import CommentList from "../components/CommentList"
 import Commentform from "../components/Commentform.jsx"
 
 function Comments(props) {
-  // const [name, setName] = useState("");
-  // const [image, setImage] = useState("");
-  // const [comment, setComment] = useState("");
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const fields = {
-  //     name:name,
-  //     image:image,
-  //     comments:comment,
-  //   };
-  //   await axios.post(baseURL, { fields }, config);
-  //   props.setToggleFetch((prev) => !prev);
-
-  // };
+ 
   const [comments, setComments] = useState("");
   const params = useParams();
 
@@ -55,7 +42,7 @@ function Comments(props) {
       </div>
       <div>
       {comments && 
-          <CommentList comments={comments} id={params.id} />
+          <CommentList setToggleFetch={props.setToggleFetch} comments={comments} id={params.id} />
         
         }
         <Commentform/>

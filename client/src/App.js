@@ -34,7 +34,7 @@ function App() {
           <Postsform setToggleFetch={setToggleFetch} />
         </Route>
           <Route path = "/posts/:id">
-            <Comments posts={posts} />
+            <Comments setToggleFetch={setToggleFetch} posts={posts} />
           </Route>
           <Route>
             <Resources path = "/resources"/>

@@ -30,6 +30,7 @@ function Postsform(props) {
     history.push("/")
     
   };
+  
   return (
     
     <div>
@@ -66,3 +67,4 @@ function Postsform(props) {
   )
 }
 export default Postsform;
+

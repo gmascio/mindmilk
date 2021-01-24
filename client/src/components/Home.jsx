@@ -1,5 +1,8 @@
 
 import { Link } from "react-router-dom"
+import Modal from "react-modal"
+import Modallist from "../components/Modallist"
+import { useState } from "react";
 
 function Home(props) {
   
@@ -8,11 +11,27 @@ function Home(props) {
   })
   console.log(props.posts)
   console.log(sortedPosts)
-
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const setModalIsOpenToTrue = () => {
+    setModalIsOpen(true)
+  }
+  const setModalIsOpenToFalse = () => {
+    setModalIsOpen(false)
+  }
+  
   return (
     <div>
       <main>
-        <h2>MindMilk Feed</h2>
+        <div className="mission">
+        <button className= "mission" onClick={setModalIsOpenToTrue}>MindMilk Mission</button>
+        <Modal isOpen={modalIsOpen}>
+          <button onClick={setModalIsOpenToFalse}>x</button>
+          <Modallist/>
+          </Modal>
+          </div>
+
+        
+        <h2 className="MindMilkFeed">MindMilk Feed</h2>
         {sortedPosts.map((post) => {
           console.log(post)
           return (
