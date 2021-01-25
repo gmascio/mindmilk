@@ -7,12 +7,13 @@ function CommentList(props) {
     return comment.fields.feed[0] == props.id;
 
   });
+  
 
-  // console.log(props.id);
+  console.log(props.id);
 
-  // console.log(commentList);
+  console.log(commentList);
   return (
-    <div>
+    <div className="commentContainer">
       {commentList && props.comments &&
         <>
           {commentList.map((com) => (

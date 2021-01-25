@@ -38,6 +38,7 @@ ul {
   text-decoration: none;
   font-size: 17px;
   padding-top: 42px;
+  padding-left: 50px;
 }
 li {
   text-align: center;
@@ -45,6 +46,9 @@ li {
   color: black;
   display: inline;
   font-size: 17px;
+  float: right;
+  padding-left: 30px;
+
 }
 
 #feed {
@@ -55,6 +59,10 @@ nav {
   background-color: #c58882;
   width: 100vw;
   text-align: center;
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 nav a {
   text-decoration: none;
@@ -63,6 +71,7 @@ nav a {
 nav a:hover,
 nav ul li:hover {
   border-bottom: 4px solid #d3bcc0;
+  
 }
 nav h1 {
   text-align: center;
@@ -79,10 +88,11 @@ nav h2 {
   font-family: "Indie Flower", cursive;
 }
 nav img {
-  width: 85px;
+  max-width: 85px;
   border-radius: 20%;
   padding-right: 13px;
   opacity: .8;
+  max-height: 80px
   
 }
 
@@ -90,10 +100,9 @@ nav img {
   max-width: 45px;
   max-height: 45px;
 }
-.post , .commentitem{
+.post {
   display: flex;
   flex-direction: row;
-  justify-content:center;
   align-items: center;
   width: 70vw;
 
@@ -101,9 +110,10 @@ nav img {
   border-radius: 20cm;
   padding: 20px;
   margin: 20px;
-  transform: translate(12%, 0);
-  max-width: 800px;
+  /* transform: translate(12%, 0); */
+  max-width: 60vw;
 }
+
 .post h1, .commentitem h3 {
   font-family: "Indie Flower", cursive;
   border: 2px dotted #74546A;
@@ -122,11 +132,15 @@ nav img {
 }
 .post img {
   border-radius: 120%;
+
 }
 main {
-  justify-content: center;
-  align-items: center;
   padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 
 }
 .post button {
@@ -139,24 +153,26 @@ padding: 15px;
 .post button:hover {
 background-color: #d3bcc0 ;
 }
-.postform, .commentitem {
+.postform {
   display: flex;
   flex-direction: column;
   width: 60vw;
-  transform: translate(20%, 0);
+  align-items: center;
   background-color: #c58882;
   border-radius: 2cm;
   margin-top: 40px;
-  padding: 30px;
-  max-width: 600px;
+  padding: 15px;
+  width: 70vw;
   margin-top: 60px;
   margin-bottom: 60px;
+  max-width: 500px;
   
 }
 .postform input {
   text-align: center;
-  padding: 7px;
+  padding: 15px;
   border-radius: 1cm;
+  width: 30vw;
 }
 .postform label {
   padding: 5px;
@@ -208,13 +224,12 @@ footer {
   display: flex;
   flex-direction: row;
   width: 45vw;
-  padding: 15px;
 
   background-color: #c5888290;
   border-radius: 20cm;
   padding: 10px;
   margin: 20px;
-  transform: translate(65%, 10%);
+  transform: translate(45%, 10%);
   max-width: 600px;
  }
  .missionstatement h1 {
@@ -273,4 +288,7 @@ footer {
  .resources p , .resources h2 {
    text-align: center;
    font-family: 'Lato', sans-serif;
+ }
+ .commentContainer {
+   padding-bottom: 55px;
  }
