@@ -2,7 +2,7 @@ import React from "react";
 
 function Resources() {
   return (
-    <div className="Resources">
+    <div className="resources">
       <h1>Mental Health Resources</h1>
       <p>
         Sourced from:
