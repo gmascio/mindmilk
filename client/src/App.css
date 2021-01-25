@@ -79,7 +79,7 @@ nav h2 {
   font-family: "Indie Flower", cursive;
 }
 nav img {
-  width: 90px;
+  width: 85px;
   border-radius: 20%;
   padding-right: 13px;
   opacity: .8;
@@ -90,7 +90,7 @@ nav img {
   max-width: 45px;
   max-height: 45px;
 }
-.post {
+.post , .commentitem{
   display: flex;
   flex-direction: row;
   justify-content:center;
@@ -104,16 +104,21 @@ nav img {
   transform: translate(12%, 0);
   max-width: 800px;
 }
-.post h1 {
+.post h1, .commentitem h3 {
   font-family: "Indie Flower", cursive;
   border: 2px dotted #74546A;
   border-radius: 90%;
+  padding: 20px;
 }
-.post h1 , .post img , .post p {
+.post img , .post p, .commentitem h3 , .commentitem p  {
   text-align: center;
   padding: 5px;
   
   
+}
+.post h1 {
+  text-align: center;
+  padding: 11px;
 }
 .post img {
   border-radius: 120%;
@@ -134,7 +139,7 @@ padding: 15px;
 .post button:hover {
 background-color: #d3bcc0 ;
 }
-.postform {
+.postform, .commentitem {
   display: flex;
   flex-direction: column;
   width: 60vw;
@@ -212,3 +217,36 @@ footer {
   transform: translate(65%, 10%);
   max-width: 600px;
  }
+ .missionstatement h1 {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+
+ }
+ .missionstatement p {
+   text-align: center;
+ }
+ .missionstatement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 50px 20px 20px;
+  overflow: auto;
+  
+ }
+ .modalcontainer {
+  position: fixed;
+  top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 600px;
+ max-width: 100%;
+ height: 400px;
+ max-height: 100%;
+ }
+
+ /* .home {
+   display: flex;
+   align-items: center;
+ } */

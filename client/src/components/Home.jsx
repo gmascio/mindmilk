@@ -1,53 +1,55 @@
-
-import { Link } from "react-router-dom"
-import Modal from "react-modal"
-import Modallist from "../components/Modallist"
+import { Link } from "react-router-dom";
+import Modal from "react-modal";
+import Modallist from "../components/Modallist";
 import { useState } from "react";
 
 function Home(props) {
-  
-  const sortedPosts = props.posts.sort((a,b) => {
-    return new Date(b.createdTime).getTime() - new Date(a.createdTime).getTime()
-  })
-  console.log(props.posts)
-  console.log(sortedPosts)
+  const sortedPosts = props.posts.sort((a, b) => {
+    return (
+      new Date(b.createdTime).getTime() - new Date(a.createdTime).getTime()
+    );
+  });
+  console.log(props.posts);
+  console.log(sortedPosts);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const setModalIsOpenToTrue = () => {
-    setModalIsOpen(true)
-  }
+    setModalIsOpen(true);
+  };
   const setModalIsOpenToFalse = () => {
-    setModalIsOpen(false)
-  }
-  
+    setModalIsOpen(false);
+  };
+
   return (
-    <div>
+    <div className="home">
       <main>
         <div className="mission">
-        <button className= "mission" onClick={setModalIsOpenToTrue}>MindMilk Mission</button>
-        <Modal isOpen={modalIsOpen}>
-          <button onClick={setModalIsOpenToFalse}>x</button>
-          <Modallist/>
+          <button className="mission" onClick={setModalIsOpenToTrue}>
+            MindMilk Mission
+          </button>
+          <Modal isOpen={modalIsOpen}>
+            <button onClick={setModalIsOpenToFalse}>x</button>
+            <Modallist />
           </Modal>
-          </div>
+        </div>
 
-        
         <h2 className="MindMilkFeed">MindMilk Feed</h2>
         {sortedPosts.map((post) => {
-          console.log(post)
+          console.log(post);
           return (
-            <div key={post.id} className= "post">
+            <div key={post.id} className="post">
               <h1>{post.fields.name} </h1>
-              <img className= "icons" src= {post.fields.image}/>
+
+              <img className="icons" src={post.fields.image} />
               <p>{post.fields.posts} </p>
-              <Link to={`/posts/${post.id}`} >
-               <button>Comments</button>
+              <Link to={`/posts/${post.id}`}>
+                <button>Comments</button>
               </Link>
             </div>
-          )
+          );
         })}
       </main>
     </div>
-  )
+  );
 }
 
 export default Home;
