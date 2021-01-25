@@ -12,7 +12,7 @@ function Nav() {
             <li id="feed"> Mental Health Resources</li>
           </Link>
         </ul>
-        <img src="https://ychef.files.bbci.co.uk/976x549/p08vpmjp.webp" />
+        <img src="https://ychef.files.bbci.co.uk/976x549/p08vpmjp.webp" alt="Milk"/>
         <Link to="/">
           <h1>MindMilk</h1>
         </Link>

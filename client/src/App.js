@@ -5,16 +5,16 @@ import { useEffect, useState } from "react";
 import Nav from "./components/Nav"
 import Home from "./components/Home"
 import Postsform from './components/Postsform';
-import { Link, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer";
 import Comments from "./components/Comments";
 import Resources from "./components/Resources"
 
 function App() {
-  {/* save posts in state */}
+ 
   const [posts, setPosts] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
-  {/* get data from API */}
+ 
   useEffect(() => {
     const getPosts = async () => {
       const resp = await axios.get(baseURL, config);

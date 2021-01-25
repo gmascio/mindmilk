@@ -2,15 +2,15 @@ import React from "react";
 
 function CommentList(props) {
   const commentList = props.comments.filter((comment) => {
-    console.log(comment.id);
-    console.log(comment)
-    return comment.fields.feed[0] === props.id;
+    // console.log(comment.id);
+    // console.log(comment)
+    return comment.fields.feed[0] == props.id;
 
   });
 
-  console.log(props.id);
+  // console.log(props.id);
 
-  console.log(commentList);
+  // console.log(commentList);
   return (
     <div>
       {commentList && props.comments &&

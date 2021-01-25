@@ -9,8 +9,8 @@ function Home(props) {
       new Date(b.createdTime).getTime() - new Date(a.createdTime).getTime()
     );
   });
-  console.log(props.posts);
-  console.log(sortedPosts);
+  // console.log(props.posts);
+  // console.log(sortedPosts);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const setModalIsOpenToTrue = () => {
     setModalIsOpen(true);
@@ -34,12 +34,12 @@ function Home(props) {
 
         <h2 className="MindMilkFeed">MindMilk Feed</h2>
         {sortedPosts.map((post) => {
-          console.log(post);
+          // console.log(post);
           return (
             <div key={post.id} className="post">
               <h1>{post.fields.name} </h1>
 
-              <img className="icons" src={post.fields.image} />
+              <img className="icons" src={post.fields.image} alt="profilepic"/>
               <p>{post.fields.posts} </p>
               <Link to={`/posts/${post.id}`}>
                 <button>Comments</button>

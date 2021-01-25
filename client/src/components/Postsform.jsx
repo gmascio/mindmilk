@@ -2,7 +2,6 @@ import { useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
 import { useHistory } from "react-router-dom";
-import useSound from "use-sound";
 import Pour from "../audio/pouring.mp3";
 
 function Postsform(props) {

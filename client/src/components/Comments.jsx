@@ -7,7 +7,9 @@ import Commentform from "../components/Commentform.jsx";
 
 function Comments(props) {
   const [comments, setComments] = useState("");
+  const [commentToggle, setCommentToggle] = useState(false)
   const params = useParams();
+  console.log (props.posts)
 
   useEffect(() => {
     const getComments = async () => {
@@ -15,9 +17,9 @@ function Comments(props) {
       setComments(resp.data.records);
     };
     getComments();
-  }, []);
+  }, [commentToggle]);
 
-  const specificPost = props.posts.filter((post) => post.id == params.id);
+  const specificPost = props.posts.filter((post) => post.id === params.id);
 
   if (!specificPost) {
     return (
@@ -32,7 +34,7 @@ function Comments(props) {
 
       <div className="post">
         <h1>{specificPost[0].fields.name}</h1>
-        <img className="icons" src={specificPost[0].fields.image} />
+        <img className="icons" src={specificPost[0].fields.image} alt="profilepic"/>
         <p>{specificPost[0].fields.posts}</p>
       </div>
       <div>
@@ -43,7 +45,7 @@ function Comments(props) {
             id={params.id}
           />
         )}
-        <Commentform />
+        <Commentform specificPost={specificPost} setCommentToggle={setCommentToggle}/>
       </div>
     </main>
   );
