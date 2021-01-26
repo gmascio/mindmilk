@@ -35,9 +35,11 @@ function Comments(props) {
 
       { specificPost &&
         <>
-      <div className="post">
-        <h1>{specificPost.fields.name}</h1>
+        <div className="post">
+          <div className= "profile-container">
         <img className="icons" src={specificPost.fields.image} alt="profilepic"/>
+        <h1>{specificPost.fields.name}</h1>
+          </div>
         <p>{specificPost.fields.posts}</p>
       </div>
       <div>

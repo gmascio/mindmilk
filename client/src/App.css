@@ -97,8 +97,8 @@ nav img {
 }
 
 .icons {
-  max-width: 45px;
-  max-height: 45px;
+  max-width: 47px;
+  max-height: 47px;
 }
 .post {
   display: flex;
@@ -122,6 +122,7 @@ nav img {
   border: 2px dotted #74546A;
   border-radius: 90%;
   padding: 20px;
+  font-size: 25px;
 }
 .post img , .post p, .commentitem h3 , .commentitem p  {
   text-align: center;
@@ -129,12 +130,17 @@ nav img {
   
   
 }
+
+.commentitem p {
+  padding-top: 15px;
+  padding-left: 10px;
+}
 .post h1 {
   text-align: center;
   padding: 11px;
 }
 .post img {
-  border-radius: 120%;
+  border-radius: 32%;
 
 }
 main {
@@ -319,6 +325,18 @@ footer div {
    width: 600px;
    display: flex;
    flex-direction: column;
+ }
+ .profile-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5px;
+   margin: 0px;
+
+ }
+
+ #likeme {
+   font-size: 100px;
  }
  
  @media only screen and (max-width: 600px) {

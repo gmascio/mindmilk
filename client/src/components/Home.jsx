@@ -37,9 +37,10 @@ function Home(props) {
           // console.log(post);
           return (
             <div key={post.id} className="post">
+              <div className="profile-container">
+              <img className="icons" src={post.fields.image} alt="profilepic" />
               <h1>{post.fields.name} </h1>
-
-              <img className="icons" src={post.fields.image} alt="profilepic"/>
+              </div>
               <p>{post.fields.posts} </p>
               <Link to={`/posts/${post.id}`}>
                 <button>Comments</button>

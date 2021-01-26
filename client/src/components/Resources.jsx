@@ -65,7 +65,7 @@ function Resources() {
           </a>
         </li>
       </ul>
-      <h3> Depresion and Suicidal Intentions:</h3>
+      <h3> Depression and Suicidal Intentions:</h3>
       <ol className="resources-list">
         <li>
           <a
@@ -99,11 +99,10 @@ function Resources() {
         <li>
           <a
             href="//www.sprc.org"
-            target="_blank" rel="noreferrer"
-          >
+            target="_blank" rel="noreferrer">
             
             Suicide Prevention Resource Center
-          </a>
+            </a>
         </li>
       </ol>
     </div>
