@@ -1,9 +1,12 @@
 import React from "react";
+import ReactPlayer from "react-player"
 
 function Resources() {
   return (
     <div className="resources">
       <h1>Mental Health Resources</h1>
+      <ReactPlayer autoplay loop muted
+        url ="https://www.youtube.com/watch?v=G0zJGDokyWQ"/>
       <p>
         Sourced from:
         <a href="https://www.mentalhealthfirstaid.org/mental-health-resources/" target="_blank" rel="noreferrer">
@@ -22,7 +25,7 @@ function Resources() {
         Lifeline at 1-800-273-TALK (8255), or dial 911 in case of emergency.
       </p>
       <h3>General Mental Health Resources:</h3>
-      <ol className="resources-list">
+      <ul className="resources-list">
         <li>
           <a
             href="https://www.mhanational.org/?gclid=CjwKCAiAr6-ABhAfEiwADO4sfXBVi76MBuHNnAosBRHDHH9bB8BIFKkzKADxnu0Fq5I9K4AD_NikohoCFUYQAvD_BwE"
@@ -59,6 +62,47 @@ function Resources() {
           >
             
             President's New Freedom Commission on Mental Health
+          </a>
+        </li>
+      </ul>
+      <h3> Depresion and Suicidal Intentions:</h3>
+      <ol className="resources-list">
+        <li>
+          <a
+            href="https://www.mhanational.org/?gclid=CjwKCAiAr6-ABhAfEiwADO4sfXBVi76MBuHNnAosBRHDHH9bB8BIFKkzKADxnu0Fq5I9K4AD_NikohoCFUYQAvD_BwE"
+            target="_blank" rel="noreferrer"
+          >
+            
+            Mental Health America
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://suicidology.org/"
+            target="_blank" rel="noreferrer"
+          >
+            
+            American Association of Suicidology
+          </a>
+        </li>
+        <li>
+          <a href="https://afsp.org/" target="_blank" rel="noreferrer">
+            
+          American Foundation for Suicide Prevention
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bbrfoundation.org/" target="_blank" rel="noreferrer"> 
+          Brain & Behavior Research Foundation
+          </a>
+        </li>
+        <li>
+          <a
+            href="//www.sprc.org"
+            target="_blank" rel="noreferrer"
+          >
+            
+            Suicide Prevention Resource Center
           </a>
         </li>
       </ol>

@@ -212,7 +212,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 5px;
+  padding: 2px;
   margin-top: 50px;
 
 }
@@ -222,6 +222,11 @@ footer {
    padding-left: 5px;
    padding-right: 5px;
  }
+footer div {
+  display: flex;
+  flex-direction: row;
+}
+ 
 
  .commentitem {
   display: flex;
@@ -276,10 +281,10 @@ footer {
 
  .resources {
    display: flex;
-   justify-content: center;
+   /* justify-content: center; */
    align-items: center;
    flex-direction: column;
-   margin: 20px 20px;
+   margin: 25px 25px;
  }
 
  .resources h1 {
@@ -303,8 +308,89 @@ footer {
  .resources h3 {
    font-size: 22px ;
    padding-bottom: 1px;
+   
  }
 
  .resources-list li {
-   font-size: 20px;
+   font-size: 22px;
+   background-color: rgb(199, 139, 139);
+   padding: 12px;
+   margin-bottom: 8px;
+   width: 600px;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ @media only screen and (max-width: 600px) {
+.post h1, .commentitem h3 {
+  font-size: 13px;
+
+}
+.post p , .commentitem p{
+  font-size: 11px;
+}
+.post button {
+  font-size: 7px;
+  width: 40px;
+  height: 15px;
+  padding: 1px;
+
+}
+.post img {
+  width: 28px;
+  height: 28px;
+}
+.post , .commentitem {
+  padding: 10px;
+}
+nav h1 {
+  font-size: 25px;
+}
+nav h2 {
+  font-size: 20px;
+}
+nav img {
+  width: 25px;
+  height: 25px;
+}
+nav li {
+  font-size: 17px;
+}
+nav {
+  margin: 1px;
+  
+}
+.mission {
+  width: 120px;
+  height: 35px;
+  font-size: 10px;
+
+}
+form button {
+  font-size: 15px;
+  transform: translate(1%, 0);
+}
+.postform {
+  padding: 5px;
+  width: 245px;
+}
+footer h5 {
+  font-size: 9px;
+  
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+}
+.postform input {
+  padding: 10px;
+}
+nav ul {
+  padding-left: 10px;
+}
+footer img {
+  width: 18px;
+  height: 19px;
+}
+
  }
