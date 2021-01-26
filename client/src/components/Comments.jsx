@@ -19,7 +19,7 @@ function Comments(props) {
     getComments();
   }, [commentToggle]);
 
-  const specificPost = props.posts.filter((post) => post.id === params.id);
+  const specificPost = props.posts.find((post) => post.id === params.id);
 
   if (!specificPost) {
     return (
@@ -28,14 +28,17 @@ function Comments(props) {
       </div>
     );
   }
+
   return (
     <main>
       <h2>Comments Feed</h2>
 
+      { specificPost &&
+        <>
       <div className="post">
-        <h1>{specificPost[0].fields.name}</h1>
-        <img className="icons" src={specificPost[0].fields.image} alt="profilepic"/>
-        <p>{specificPost[0].fields.posts}</p>
+        <h1>{specificPost.fields.name}</h1>
+        <img className="icons" src={specificPost.fields.image} alt="profilepic"/>
+        <p>{specificPost.fields.posts}</p>
       </div>
       <div>
         {comments && (
@@ -46,7 +49,9 @@ function Comments(props) {
           />
         )}
         <Commentform specificPost={specificPost} setCommentToggle={setCommentToggle}/>
-      </div>
+          </div>
+          </>
+      }
     </main>
   );
 }

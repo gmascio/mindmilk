@@ -33,9 +33,11 @@ function App() {
         <Route path = "/newpost">
           <Postsform setToggleFetch={setToggleFetch} />
         </Route>
-          <Route path = "/posts/:id">
-            <Comments setToggleFetch={setToggleFetch} posts={posts} />
+            {posts &&
+          <Route path="/posts/:id">
+              <Comments setToggleFetch={setToggleFetch} posts={posts} />
           </Route>
+            }
           <Route>
             <Resources path = "/resources"/>
           </Route>

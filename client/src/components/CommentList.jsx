@@ -4,7 +4,7 @@ function CommentList(props) {
   const commentList = props.comments.filter((comment) => {
     // console.log(comment.id);
     // console.log(comment)
-    return comment.fields.feed[0] == props.id;
+    return comment.fields.feed[0] === props.id;
 
   });
   
