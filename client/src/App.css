@@ -111,9 +111,12 @@ nav img {
   padding: 20px;
   margin: 20px;
   /* transform: translate(12%, 0); */
-  max-width: 60vw;
+  max-width: 650px;
 }
-
+.form-container{
+  display: flex;
+ justify-content: center;
+}
 .post h1, .commentitem h3 {
   font-family: "Indie Flower", cursive;
   border: 2px dotted #74546A;
@@ -282,7 +285,7 @@ footer {
  .resources h1 {
    text-align: center;
    font-family: "Indie Flower", cursive;
-   font-size: 35px;
+   font-size: 38px;
    
  }
  .resources p , .resources h2 {
@@ -291,4 +294,17 @@ footer {
  }
  .commentContainer {
    padding-bottom: 55px;
+ }
+ .resources-list {
+   display: flex;
+   flex-direction: column;
+
+ }
+ .resources h3 {
+   font-size: 22px ;
+   padding-bottom: 1px;
+ }
+
+ .resources-list li {
+   font-size: 20px;
  }

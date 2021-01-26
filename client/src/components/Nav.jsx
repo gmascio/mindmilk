@@ -10,11 +10,11 @@ function Nav() {
         </Link>
         <h2>Milk for the Mind</h2>
         <ul>
-          <Link to="/newpost">
-            <li id="post">Post Form</li>
-          </Link>
           <Link to="/resources">
             <li id="feed"> Mental Health Resources</li>
+          </Link>
+          <Link to="/newpost">
+            <li id="post">Post Form</li>
           </Link>
         </ul>
       </nav>

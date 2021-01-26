@@ -15,7 +15,7 @@ function Commentform(props) {
     const fields = {
       comment,
       name,
-      feed: props.specificPost[0].fields.name
+      feed: [props.specificPost[0].id]
     };
     await axios.post(commentURL, { fields }, config);
     props.setCommentToggle((prev) => !prev);

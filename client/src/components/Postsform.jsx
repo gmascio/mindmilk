@@ -31,7 +31,7 @@ function Postsform(props) {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <form className="postform" onSubmit={handleSubmit}>
         <h4>Make a New MindMilk Post!</h4>
         <label htmlFor="name">Name:</label>

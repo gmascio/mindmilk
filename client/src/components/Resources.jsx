@@ -22,7 +22,7 @@ function Resources() {
         Lifeline at 1-800-273-TALK (8255), or dial 911 in case of emergency.
       </p>
       <h3>General Mental Health Resources:</h3>
-      <ol>
+      <ol className="resources-list">
         <li>
           <a
             href="https://www.mhanational.org/?gclid=CjwKCAiAr6-ABhAfEiwADO4sfXBVi76MBuHNnAosBRHDHH9bB8BIFKkzKADxnu0Fq5I9K4AD_NikohoCFUYQAvD_BwE"
