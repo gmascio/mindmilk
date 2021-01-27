@@ -484,10 +484,12 @@ max-height: 100%;
 
 }
 .commentitem {
+  
   width: 270px;
+  transform: translate(10%, 10%);
 }
 .post {
-  width: 400px;
+  width: 300px;
 }
 .resources h1 {
   font-size: 23px;
