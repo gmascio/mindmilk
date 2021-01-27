@@ -24,7 +24,7 @@ Mobile:
 ![imageAlt](https://i.ibb.co/XVYhFx4/Screen-Shot-2021-01-20-at-2-08-55-PM.png) 
 ## Component Heirarchy
 
-![imageAlt](https://i.ibb.co/jypk7ZC/Screen-Shot-2021-01-20-at-12-23-58-PM.png)
+![imageAlt](https://i.ibb.co/PM9j9Pb/Screen-Shot-2021-01-27-at-10-39-28-AM.png)
 
 
 ## Airtable Data
@@ -80,30 +80,30 @@ Airtable is returning the data for this base as follows:
 
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
-| Jan 19   | Proposal Approval / Pitches Due            |          |
-| Jan 19-21| Component Creation / Get, Set, Delete Data |          |
-| Jan 21-22| Perfect Components                         |          |
-| Jan 22-25| MVP completion/Post MVP start              |          |
-| Jan 25   | Advanced CSS                               |          |
-| Jan 27   | Presentatios                               |          |
+| Jan 19   | Proposal Approval / Pitches Due            |     Complete     |
+| Jan 19-21| Component Creation / Get, Set, Delete Data |   Complete       |
+| Jan 21-22| Perfect Components                         |   Complete       |
+| Jan 22-25| MVP completion/Post MVP start              |    Complete      |
+| Jan 25   | Advanced CSS                               |    Complete      |
+| Jan 27   | Presentatios                               |    ---      |
 
 ## Timeframes
 
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                  |    H     |      2.5hrs      |          |        |
-| Airtable setup            |    H     |     1hrs      |          |          |
-| Clickable icons (Submit Button)          |    H     |      1hrs      |           |          |
-| Data population pg 1  (Home)    |    H     |      5hrs      |          |         |
-| Data population pg 2  (Archives)    |    H     |      5hrs      |          |         |
-| Data population pg 3   (MentalHealth Feed - Post MVP)   |    H     |      3hrs      |           |         |
-| Data creation/update pg 1 |    H     |      3hrs      |          |         |
-| Data creation/update pg 2 |    H     |      3hrs      |          |          |
-| Data creation/update pg 3 |    H     |      3hrs      |          |          |
-| Component CSS pg 1        |    H     |      3hrs      |          |         |
-| Component CSS pg 2        |    H     |      3hrs      |          |         |
-| Component CSS pg 3        |    H     |      3hrs      |         |         |
-| Total                     |    H     |    35.5hrs     |          |        |
+| Proposal                  |    H     |      2.5hrs      |    2h      |     2h   |
+| Airtable setup            |    H     |     1hrs      |     1h     |       1hr   |
+| Clickable icons (Submit Button)          |    H     |      1hrs      |     .5hr      |    .5hr      |
+| Data population pg 1  (Home)    |    H     |      5hrs      |   2hrs       |   2hrs      |
+| Data population pg 2  (Archives)    |    H     |      5hrs      |    2hrs      |     2hrs    |
+| Data population pg 3   (MentalHealth Feed - Post MVP)   |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Data creation/update pg 1 |    H     |      3hrs      |    2hrs      |    2hrs     |
+| Data creation/update pg 2 |    H     |      3hrs      |     6hrs     |    6hrs      |
+| Data creation/update pg 3 |    H     |      3hrs      |       1hr   |     1hr     |
+| Component CSS pg 1        |    H     |      3hrs      |     4hrs     |   4hrs      |
+| Component CSS pg 2        |    H     |      3hrs      |      1hr    |    1hr     |
+| Component CSS pg 3        |    H     |      3hrs      |      2hr   |   2hr      |
+| Total                     |    H     |    35.5hrs     |    26.5      |   26.5     |
 
 ## Action Priority Matrix
 
