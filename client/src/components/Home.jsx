@@ -26,8 +26,8 @@ function Home(props) {
           <button className="mission" onClick={setModalIsOpenToTrue}>
             MindMilk Mission
           </button>
-          <Modal isOpen={modalIsOpen}>
-            <button onClick={setModalIsOpenToFalse}>x</button>
+          <Modal style={{ background: "rgb( 300, 300, 300)"}} isOpen={modalIsOpen}>
+            <button onClick={setModalIsOpenToFalse}>Back to MindMilk</button>
             <Modallist />
           </Modal>
         </div>

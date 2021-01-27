@@ -1,7 +1,7 @@
 import { LikeButton, Provider } from "@lyket/react";
 import React from "react";
 
-function CommentList(props, { title, content }) {
+function CommentList(props) {
   const commentList = props.comments.filter((comment) => {
   
     return comment.fields.feed[0] === props.id;
@@ -27,11 +27,12 @@ function CommentList(props, { title, content }) {
             <div className="commentitem">
               <h3>{com.fields.name}</h3>
               <p>{com.fields.comment}</p>
-              {title}
+              <div className="like">
               <Provider apiKey="399b32917e64940844091fa308648b">
               <LikeButton id="likeme" component={LikeButton.templates.Twitter} namespace="post"/>
-                {content}
+              
                 </Provider>
+                </div>
             </div>
           ))}
         </>
