@@ -4,7 +4,7 @@ import { baseURL, config } from "../services";
 import { useHistory } from "react-router-dom";
 import Pour from "../audio/pouring.mp3";
 
-function Postsform(props) {
+function PostsForm(props) {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [post, setPost] = useState("");
@@ -66,4 +66,4 @@ function Postsform(props) {
     </div>
   );
 }
-export default Postsform;
+export default PostsForm;

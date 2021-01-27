@@ -4,8 +4,11 @@ function Nav() {
   return (
     <div>
       <nav>
-        <img src="https://ychef.files.bbci.co.uk/976x549/p08vpmjp.webp" alt="Milk"/>
-        <Link className= "home-link"to="/">
+        <img
+          src="https://ychef.files.bbci.co.uk/976x549/p08vpmjp.webp"
+          alt="Milk"
+        />
+        <Link className="home-link" to="/">
           <h1>MindMilk</h1>
         </Link>
         <h2>Milk for the Mind</h2>

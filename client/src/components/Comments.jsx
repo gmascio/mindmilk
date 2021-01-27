@@ -3,13 +3,12 @@ import { useState, useEffect } from "react";
 import { commentURL, config } from "../services";
 import axios from "axios";
 import CommentList from "../components/CommentList";
-import Commentform from "../components/Commentform.jsx";
+import CommentForm from "./CommentForm.jsx";
 
 function Comments(props) {
   const [comments, setComments] = useState("");
-  const [commentToggle, setCommentToggle] = useState(false)
+  const [commentToggle, setCommentToggle] = useState(false);
   const params = useParams();
-  console.log (props.posts)
 
   useEffect(() => {
     const getComments = async () => {
@@ -33,27 +32,34 @@ function Comments(props) {
     <main>
       <h2>Comments Feed</h2>
 
-      { specificPost &&
+      {specificPost && (
         <>
-        <div className="post">
-          <div className= "profile-container">
-        <img className="icons" src={specificPost.fields.image} alt="profilepic"/>
-        <h1>{specificPost.fields.name}</h1>
+          <div className="post">
+            <div className="profile-container">
+              <img
+                className="icons"
+                src={specificPost.fields.image}
+                alt="profilepic"
+              />
+              <h1>{specificPost.fields.name}</h1>
+            </div>
+            <p>{specificPost.fields.posts}</p>
           </div>
-        <p>{specificPost.fields.posts}</p>
-      </div>
-      <div>
-        {comments && (
-          <CommentList
-            setToggleFetch={props.setToggleFetch}
-            comments={comments}
-            id={params.id}
-          />
-        )}
-        <Commentform specificPost={specificPost} setCommentToggle={setCommentToggle}/>
+          <div>
+            {comments && (
+              <CommentList
+                setToggleFetch={props.setToggleFetch}
+                comments={comments}
+                id={params.id}
+              />
+            )}
+            <CommentForm
+              specificPost={specificPost}
+              setCommentToggle={setCommentToggle}
+            />
           </div>
-          </>
-      }
+        </>
+      )}
     </main>
   );
 }

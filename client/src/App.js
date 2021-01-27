@@ -4,7 +4,7 @@ import { baseURL, config } from "./services";
 import { useEffect, useState } from "react";
 import Nav from "./components/Nav"
 import Home from "./components/Home"
-import Postsform from './components/Postsform';
+import PostsForm from './components/PostsForm';
 import { Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer";
 import Comments from "./components/Comments";
@@ -31,7 +31,7 @@ function App() {
           <Home posts={posts} />
         </Route>
         <Route path = "/newpost">
-          <Postsform setToggleFetch={setToggleFetch} />
+          <PostsForm setToggleFetch={setToggleFetch} />
         </Route>
             {posts &&
           <Route path="/posts/:id">

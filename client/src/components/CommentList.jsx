@@ -3,7 +3,6 @@ import React from "react";
 
 function CommentList(props) {
   const commentList = props.comments.filter((comment) => {
-  
     return comment.fields.feed[0] === props.id;
 
   });
@@ -16,9 +15,6 @@ function CommentList(props) {
   }
   
 
-  console.log(props.id);
-
-  console.log(commentList);
   return (
     <div className="commentContainer">
       {commentList && props.comments &&
@@ -27,6 +23,7 @@ function CommentList(props) {
             <div className="commentitem">
               <h3>{com.fields.name}</h3>
               <p>{com.fields.comment}</p>
+              {/* Like button sourced from https://lyket.dev/docs/react */}
               <div className="like">
               <Provider apiKey="399b32917e64940844091fa308648b">
               <LikeButton id="likeme" component={LikeButton.templates.Twitter} namespace="post"/>

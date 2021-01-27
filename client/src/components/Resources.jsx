@@ -1,16 +1,22 @@
 import React from "react";
-import ReactPlayer from "react-player"
+import ReactPlayer from "react-player";
 
 function Resources() {
   return (
     <div className="resources">
       <h1>Mental Health Resources</h1>
-      <ReactPlayer autoplay loop 
-        url ="https://www.youtube.com/watch?v=G0zJGDokyWQ"/>
+      <ReactPlayer
+        autoplay
+        loop
+        url="https://www.youtube.com/watch?v=G0zJGDokyWQ"
+      />
       <p>
         Sourced from:
-        <a href="https://www.mentalhealthfirstaid.org/mental-health-resources/" target="_blank" rel="noreferrer">
-          
+        <a
+          href="https://www.mentalhealthfirstaid.org/mental-health-resources/"
+          target="_blank"
+          rel="noreferrer"
+        >
           Mental Health First Aid National Council for Behavioral Health
         </a>
       </p>
@@ -29,38 +35,41 @@ function Resources() {
         <li>
           <a
             href="https://www.mhanational.org/?gclid=CjwKCAiAr6-ABhAfEiwADO4sfXBVi76MBuHNnAosBRHDHH9bB8BIFKkzKADxnu0Fq5I9K4AD_NikohoCFUYQAvD_BwE"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
-            
             Mental Health America
           </a>
         </li>
         <li>
           <a
             href="https://www.thenationalcouncil.org/ccbhc-success-center/events/?gclid=CjwKCAiAr6-ABhAfEiwADO4sfZJLozhMHLjaCqOKQ-1y9lhgv0VtEtCKFtnf02-TTOauyXP5FIGcGhoCCBgQAvD_BwE"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
-            
             National Council for Behavioral Health
           </a>
         </li>
         <li>
           <a href="https://power2u.org/" target="_blank" rel="noreferrer">
-            
             National Empowerment Center
           </a>
         </li>
         <li>
-          <a href="https://www.nimh.nih.gov/index.shtml" target="_blank" rel="noreferrer"> 
+          <a
+            href="https://www.nimh.nih.gov/index.shtml"
+            target="_blank"
+            rel="noreferrer"
+          >
             National Institute of Mental Health
           </a>
         </li>
         <li>
           <a
             href="https://ps.psychiatryonline.org/doi/full/10.1176/appi.ps.54.11.1467"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
-            
             President's New Freedom Commission on Mental Health
           </a>
         </li>
@@ -70,39 +79,35 @@ function Resources() {
         <li>
           <a
             href="https://www.mhanational.org/?gclid=CjwKCAiAr6-ABhAfEiwADO4sfXBVi76MBuHNnAosBRHDHH9bB8BIFKkzKADxnu0Fq5I9K4AD_NikohoCFUYQAvD_BwE"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
-            
             Mental Health America
           </a>
         </li>
         <li>
-          <a
-            href="https://suicidology.org/"
-            target="_blank" rel="noreferrer"
-          >
-            
+          <a href="https://suicidology.org/" target="_blank" rel="noreferrer">
             American Association of Suicidology
           </a>
         </li>
         <li>
           <a href="https://afsp.org/" target="_blank" rel="noreferrer">
-            
-          American Foundation for Suicide Prevention
-          </a>
-        </li>
-        <li>
-          <a href="https://www.bbrfoundation.org/" target="_blank" rel="noreferrer"> 
-          Brain & Behavior Research Foundation
+            American Foundation for Suicide Prevention
           </a>
         </li>
         <li>
           <a
-            href="//www.sprc.org"
-            target="_blank" rel="noreferrer">
-            
+            href="https://www.bbrfoundation.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Brain & Behavior Research Foundation
+          </a>
+        </li>
+        <li>
+          <a href="//www.sprc.org" target="_blank" rel="noreferrer">
             Suicide Prevention Resource Center
-            </a>
+          </a>
         </li>
       </ol>
     </div>

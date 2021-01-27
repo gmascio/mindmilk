@@ -4,12 +4,9 @@ import { commentURL, config } from "../services";
 import { useState } from "react";
 import Pour from "../audio/pouring.mp3";
 
-function Commentform(props) {
+function CommentForm(props) {
   const [name, setName] = useState("");
-  // const [image, setImage] = useState("");
   const [comment, setComment] = useState("");
-  // const [feed, setFeed] = useState(props.specificPost.fields.name)
-  console.log(props.specificPost)
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
@@ -37,14 +34,6 @@ function Commentform(props) {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        {/* <label htmlFor="image">Image:</label>
-        <input
-          name="image"
-          type="text"
-          placeholder="URL"
-          value={image}
-          onChange={(e) => setImage(e.target.value)}
-        /> */}
         <label htmlFor="post">Comment:</label>
         <input
           name="post"
@@ -62,4 +51,4 @@ function Commentform(props) {
   );
 }
 
-export default Commentform;
+export default CommentForm;

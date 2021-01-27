@@ -1,6 +1,7 @@
 import React from "react";
 
-function Modallist() {
+
+function ModalPage() {
   return (
     <div className="modalcontainer">
       <div className="missionstatement">
@@ -17,4 +18,4 @@ function Modallist() {
   );
 }
 
-export default Modallist;
+export default ModalPage;
