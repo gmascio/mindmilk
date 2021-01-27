@@ -26,7 +26,7 @@ function Commentform(props) {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <form className="postform" onSubmit={handleSubmit}>
         <h4>Post a MindMilk Comment!</h4>
         <label htmlFor="name">Name:</label>
