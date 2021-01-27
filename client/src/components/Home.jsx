@@ -27,7 +27,7 @@ function Home(props) {
             MindMilk Mission
           </button>
           <Modal style={{ background: "rgb( 300, 300, 300)"}} isOpen={modalIsOpen}>
-            <button onClick={setModalIsOpenToFalse}>Back to MindMilk</button>
+            <button onClick={setModalIsOpenToFalse}>Back to MindMilk!</button>
             <Modallist />
           </Modal>
         </div>

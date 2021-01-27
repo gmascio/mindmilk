@@ -76,6 +76,7 @@ nav ul li:hover {
 .home-link {
   margin: 12px;
 }
+
 nav h1 {
   text-align: center;
   font-size: 60px;
@@ -92,12 +93,16 @@ nav h2 {
   margin-top: 45px;
 }
 nav img {
-  max-width: 85px;
+  max-width: 120px;
   border-radius: 20%;
   padding-right: 13px;
   opacity: .8;
-  max-height: 80px
-  
+  max-height: 100px;
+  width: 60px;
+  height: 50px;
+  margin-top: 30px ;
+  margin-left: 20px;
+  margin-right: 0px;
 }
 
 .icons {
@@ -263,29 +268,25 @@ footer div {
   /* max-height: 90px; */
   justify-content: space-around;
  }
- .missionstatement h1 {
+ .missionstatement h1, .missionstatement h2 {
   font-family: "Indie Flower", cursive;
   text-align: center;
 
  }
  .missionstatement p {
    text-align: center;
-   padding: 40px;
+   padding: 0px 30px 10px 30px;
+   margin: 0px 30px 0px 30px;
  }
  .missionstatement {
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px 50px 20px 20px;
-  overflow: auto; */
   
+ }
+ .missionstatement h2 {
+   margin-top: 0px;
  }
  .modalcontainer {
   position: fixed;
@@ -304,6 +305,7 @@ footer div {
 
  .ReactModal__Content{
    background-color: #c58882 !important; 
+   margin: 60px;
 
  }
  
@@ -394,19 +396,22 @@ footer div {
   margin: 40px 0px 0px 0px;
 }
 nav h1 {
-  font-size: 25px;
+  font-size: 19px;
   
 }
 nav h2 {
-  font-size: 20px;
+  font-size: 15px;
 }
 nav img {
-  width: 60px;
-  height: 60px;
-  margin: 25px 0px 10px 15px;
+  width: 45px;
+  height: 40px;
+  margin: 40px 0px 10px 15px;
 }
 nav li {
   font-size: 17px;
+}
+#feed {
+  padding-left: 69px;
 }
 nav {
   margin: 1px;
@@ -447,5 +452,156 @@ footer img {
 nav li {
   font-size: 12px;
 }
+.missionstatement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+.missionstatement h2 {
+  margin-top: 0px;
+}
+.modalcontainer {
+ position: fixed;
+ top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 600px;
+max-width: 100%;
+height: 400px;
+max-height: 100%;
+
+
+
+}
+.ReactModal__Content{
+  background-color: #c58882 !important; 
+  margin: 10px;
+
+}
 
  }
+@media only screen and (min-width: 1400px){
+  .post h1, .commentitem h3 {
+    font-size: 30px;
+  
+  }
+  .post p , .commentitem p{
+    font-size: 20px;
+  }
+  .post button {
+    font-size: 19px;
+    width: 100px;
+    height: 45px;
+    padding: 3px;
+  
+  }
+  .post img {
+    width: 50px;
+    height: 50px;
+  }
+  .post , .commentitem {
+    padding: 40px;
+  }
+  .home-link {
+    margin: 40px 0px 0px 0px;
+  }
+  nav h1 {
+    font-size: 65px;
+    
+  }
+  nav h2 {
+    font-size: 30px;
+    margin-top: 76px;
+  }
+  nav img {
+    width: 150px;
+    height: 1000px;
+    margin: 25px 0px 10px 15px;
+  }
+  nav li {
+    font-size: 27px;
+  }
+  #feed {
+    padding-left: 69px;
+  }
+  nav {
+    margin: 1px;
+    
+  }
+  .mission {
+    width: 120px;
+    height: 35px;
+    font-size: 10px;
+  
+  }
+  form button {
+    font-size: 15px;
+    transform: translate(1%, 0);
+  }
+  .postform {
+    padding: 10px 130px;
+    width: 245px;
+    margin: 90px 69px;
+  }
+  footer h5 {
+    font-size: 19px;
+    
+  }
+  footer div {
+    display: flex;
+    flex-direction: row;
+  }
+  .postform input {
+    padding: 15px;
+  }
+  .postform h4 {
+    font-size: 28px;
+  }
+  .postform label {
+    font-size: 25px;
+  }
+  .postform button {
+    font-size: 20px;
+    width: 170px;
+    height: 70px;
+  }
+  nav ul {
+    padding-left: 60px;
+  }
+  footer img {
+    width: 38px;
+    height: 39px;
+  }
+  nav li {
+    font-size: 24px;
+    margin-top: 35px;
+  }
+  .missionstatement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+  }
+  .missionstatement h2 {
+    margin-top: 0px;
+  }
+  .home h2 {
+    font-size: 45px;
+    margin-top: 80px;
+  }
+  .mission {
+    font-size: 20px;
+    
+  }
+  .mission button {
+    width: 400px;
+    height: 60px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    
+  }
+
+} 

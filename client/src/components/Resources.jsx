@@ -5,7 +5,7 @@ function Resources() {
   return (
     <div className="resources">
       <h1>Mental Health Resources</h1>
-      <ReactPlayer autoplay loop muted
+      <ReactPlayer autoplay loop 
         url ="https://www.youtube.com/watch?v=G0zJGDokyWQ"/>
       <p>
         Sourced from:
